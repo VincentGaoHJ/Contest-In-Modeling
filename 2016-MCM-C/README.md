@@ -19,4 +19,56 @@ The ProblemCDATA.zip data file contains:
 
 ## An Educational Donation Mechanism Based On Data Insght
 
-### 
+### Summary
+
+### Introduction
+
+#### Background(Gao)
+
+#### Overview of Our Work(Gao)
+
+#### Assumptions(Liu)
+
+### Data Processing
+
+#### Data Screening(Liu)
+
+#### Data imputation(Liu)
+
+#### Data Normaliztion(Liu)
+
+### ROI Evaluation
+
+#### Concept of ROI(Liu)
+
+#### Using Grey Theory to Predict ROI(Liu)
+
+### Model Construction
+
+#### Definition of Risk(Liu)
+
+#### Basic Model(Liu)
+
+#### Results of Basic Model(Hu)
+
+#### Time Series Model(Liu)
+
+#### Results of Time Series Model(Hu)
+
+### Sensitive analysis and validation
+
+#### Risk-Return(Hu)
+
+#### School Number(Hu)
+
+#### Policy of Distribution(Hu)
+
+### Future Work(Gao)
+
+### Conclusion
+
+#### Strengths(Hu)
+
+#### weaknesses(Hu)
+
+### News Release(Gao)
