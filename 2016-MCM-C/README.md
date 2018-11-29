@@ -17,7 +17,7 @@ The ProblemCDATA.zip data file contains:
 * Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx
 * IPEDS Variables for Data Selection.pdf
 
-## An Educational Donation Mechanism Based On Data Insght
+## An Educational Donation Mechanism Based On Data Insight(Team #50193)
 
 ### Summary
 
