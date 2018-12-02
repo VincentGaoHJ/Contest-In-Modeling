@@ -122,3 +122,27 @@ The ProblemCDATA.zip data file contains:
 ### Conclusions and Discussion(Hu)
 
 ### Letters to the CFO(Gao)
+
+---
+
+## A Multilevel Bayesian Model based on Economic Contribution of University Alumni (Team #52815)
+
+### Summary(Gao)
+
+### Introduction(Gao)
+
+### Data Cleaning and Imputation Schema(Liu)
+
+### Model Components(Liu)
+
+### Solving the Optimization Problem(Hu)
+
+### Problem Statement and Special Considerations(Liu)
+
+### Model Analysis(Hu)
+
+### Results from Model(Hu)
+
+### Conclusion(Hu)
+
+### Letters to the CFO(Gao)
