@@ -17,6 +17,10 @@ The ProblemCDATA.zip data file contains:
 * Problem C - CollegeScorecardDataDictionary-09-08-2015.xlsx
 * IPEDS Variables for Data Selection.pdf
 
+
+---
+
+
 ## An Educational Donation Mechanism Based On Data Insight(Team #50193)
 
 ### Summary
@@ -72,3 +76,49 @@ The ProblemCDATA.zip data file contains:
 #### weaknesses(Hu)
 
 ### News Release(Gao)
+
+---
+
+## The Optimal Investment Strategy Based on the Large--scale Non-linear Constraint Optimization Methods (Team #47823)
+
+### Summary(Gao)
+
+### Problem Statement(Gao)
+
+### Assumptions(Liu)
+
+### Data Analysis and Focus Decision(Liu)
+
+### School Selecting(Liu)
+
+### Strategy Making(Liu)
+
+### Result(Hu)
+
+### Test our model(Hu)
+
+### Conclusion(Hu)
+
+### Letters to the CFO(Gao)
+
+---
+
+## An Optimal Strategy of Donation for Educational Purpose (Team #42939)
+
+### Summary(Gao)
+
+### Introduction(Gao)
+
+### Addressing the Missing Values(Liu)
+
+### Determining the Performance Index(Liu)
+
+### Identifying Performance Contributing Variables via Post-LASSO(Liu)
+
+### Determining Investment Strategy based on ROI(Liu)
+
+### Extended Model(Hu)
+
+### Conclusions and Discussion(Hu)
+
+### Letters to the CFO(Gao)
