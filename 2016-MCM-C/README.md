@@ -26,30 +26,12 @@ The ProblemCDATA.zip data file contains:
   * [An Educational Donation Mechanism Based On Data Insight(Team \#50193)](#an-educational-donation-mechanism-based-on-data-insightteam-50193)
     * [Summary](#summary)
     * [Introduction](#introduction)
-      * [Background(Gao)](#backgroundgao)
-      * [Overview of Our Work(Gao)](#overview-of-our-workgao)
-      * [Assumptions(Liu)](#assumptionsliu)
     * [Data Processing](#data-processing)
-      * [Data Screening(Liu)](#data-screeningliu)
-      * [Data imputation(Liu)](#data-imputationliu)
-      * [Data Normaliztion(Liu)](#data-normaliztionliu)
     * [ROI Evaluation](#roi-evaluation)
-      * [Concept of ROI(Liu)](#concept-of-roiliu)
-      * [Using Grey Theory to Predict ROI(Liu)](#using-grey-theory-to-predict-roiliu)
     * [Model Construction](#model-construction)
-      * [Definition of Risk(Liu)](#definition-of-riskliu)
-      * [Basic Model(Liu)](#basic-modelliu)
-      * [Results of Basic Model(Hu)](#results-of-basic-modelhu)
-      * [Time Series Model(Liu)](#time-series-modelliu)
-      * [Results of Time Series Model(Hu)](#results-of-time-series-modelhu)
     * [Sensitive analysis and validation](#sensitive-analysis-and-validation)
-      * [Risk\-Return(Hu)](#risk-returnhu)
-      * [School Number(Hu)](#school-numberhu)
-      * [Policy of Distribution(Hu)](#policy-of-distributionhu)
     * [Future Work(Gao)](#future-workgao)
     * [Conclusion](#conclusion)
-      * [Strengths(Hu)](#strengthshu)
-      * [weaknesses(Hu)](#weaknesseshu)
     * [News Release(Gao)](#news-releasegao)
   * [The Optimal Investment Strategy Based on the Large\-\-scale Non\-linear Constraint Optimization Methods (Team \#47823)](#the-optimal-investment-strategy-based-on-the-large--scale-non-linear-constraint-optimization-methods-team-47823)
     * [Summary(Gao)](#summarygao)
@@ -135,6 +117,9 @@ The ProblemCDATA.zip data file contains:
 
 #### Overview of Our Work(Gao)
 
+* Decompose the whole problem into small issues
+* Divide our task into small steps
+
 #### Assumptions(Liu)
 
 ### Data Processing
@@ -173,6 +158,16 @@ The ProblemCDATA.zip data file contains:
 
 ### Future Work(Gao)
 
+**We cannot figure out intuitively why we should invest them**
+
+* Invite experts to do the subjective evaluation.
+* Focus on differen subjects and different students.
+* More data is needed.
+    * More data of missing data.
+    * More data of information of schools.
+    * More data of other charitable organization.
+
+
 ### Conclusion
 
 #### Strengths(Hu)
@@ -180,6 +175,8 @@ The ProblemCDATA.zip data file contains:
 #### weaknesses(Hu)
 
 ### News Release(Gao)
+
+
 
 ---
 
