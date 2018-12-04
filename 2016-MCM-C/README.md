@@ -25,9 +25,48 @@ The ProblemCDATA.zip data file contains:
 
 ### Summary
 
+* **Introduction**
+    * Background
+    * Combine our own paper
+* **Operate on the data**
+    * Data screening
+    * Deleting data
+    * merging attributes
+    * Missing data imputation
+    * Normalize data
+* **Construct a ROI evaluation critria**
+    * **Propose the model**
+        * Ratio: output/input
+        * Coefficient: urgency
+    * **Explain the significance of model parameters**
+        * The ratio reflects the benefits in related to the cost
+        * Urgency reflacts the demand of money
+    * **Explain how to set model parameters**
+        * PCA
+        * AHP
+* **Put forward two kinds of model**
+    On the basis of ROI, the concept of risk ( Imitating the concept of Modern Portfolio Theory) is introduced.
+    * **Basic model for one year**
+        * Mixed Integer Linear Programming Algorithm
+    * **Time series for five year**
+        * MILP
+        * Grey Prediction
+* **Make sensitivity analysis**
+    * the amount of schools
+    * the restriction for money
+    * whether allocating the money equally or not
+* **To sum up**
+    * Feasible
+    * Reasonable
+    * **Subjectivity**
+
 ### Introduction
 
 #### Background(Gao)
+
+* Explain why data is needed to guide work and life.
+* Explain why this model needs ROI.
+* A brief explanation of our work and the theory we used。
 
 #### Overview of Our Work(Gao)
 
