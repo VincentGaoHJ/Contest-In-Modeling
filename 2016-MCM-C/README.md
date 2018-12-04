@@ -1,4 +1,4 @@
-# 2016 MCM PROBLEM C: The Goodgrant Challenge
+# 2016 MCM Problem C: The Goodgrant Challenge
 
 
 The Goodgrant Foundation is a charitable organization that wants to help improve educational performance of undergraduates attending colleges and universities in the United States. To do this, the foundation intends to donate a total of $100,000,000 (US100 million) to an appropriate group of schools per year, for five years, starting July 2016. In doing so, they do not want to duplicate the investments and focus of other large grant organizations such as the Gates Foundation and Lumina Foundation.
@@ -19,7 +19,11 @@ The ProblemCDATA.zip data file contains:
 
 
 ---
+## Contents
 
+[TOC]
+
+---
 
 ## An Educational Donation Mechanism Based On Data Insight(Team #50193)
 
