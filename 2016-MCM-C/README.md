@@ -21,7 +21,6 @@ The ProblemCDATA.zip data file contains:
 ---
 ## Contents
 
-[TOC]
 
 ---
 
