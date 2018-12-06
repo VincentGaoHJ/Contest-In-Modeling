@@ -282,7 +282,7 @@ Then we set out to decide our focus, which is to invest more on those schools wi
 
 * **Devise strategy**
     * **Improved PSO Algorithm Based on the Augmented Lagrange 基于增广拉格朗日的粒子群优化算法**
-        A typical method to solve the multivariable optimization problem.
+    A typical method to solve the multivariable optimization problem.
 * **Make sensitivity analysis**
     * Parameter K
 
