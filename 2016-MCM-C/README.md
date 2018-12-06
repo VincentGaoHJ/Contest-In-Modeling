@@ -91,7 +91,7 @@ The ProblemCDATA.zip data file contains:
     * **Explain how to set model parameters**
         * PCA
         * AHP
-* **Put forward two kinds of model**
+* **Put forward two kinds of model:**
     On the basis of ROI, the concept of risk ( Imitating the concept of Modern Portfolio Theory) is introduced.
     * **Basic model for one year**
         * Mixed Integer Linear Programming Algorithm
@@ -223,23 +223,31 @@ The ProblemCDATA.zip data file contains:
 
 #### Strengths(Hu)
 
-* **完整性：**使用了所有数据，考虑了时间序列。
+* **完整性：**
+使用了所有数据，考虑了时间序列。
 
-* **科学理论支撑：**模型中使用了许多合理的科学理论和方法。
+* **科学理论支撑：**
+模型中使用了许多合理的科学理论和方法。
 
-* **交叉融合性：**使用金融领域的知识解决建模问题。
+* **交叉融合性：**
+使用金融领域的知识解决建模问题。
 
-* **灵活可扩展：**可以根据主观需要扩展模型适应更多情景。
+* **灵活可扩展：**
+可以根据主观需要扩展模型适应更多情景。
 
 #### weaknesses(Hu)
 
-* **缺乏数据支持：**需要更大量的数据来完善模型。
+* **缺乏数据支持：**
+需要更大量的数据来完善模型。
 
-* **过于主观：**模型中的一些方法过于主观，一些指数是由经验和直觉得出，不够可靠。
+* **过于主观：**
+模型中的一些方法过于主观，一些指数是由经验和直觉得出，不够可靠。
 
-* **简化的假设：**为使模型可求解，简化了假设，一些有价值的数据和信息没有用上。
+* **简化的假设：**
+为使模型可求解，简化了假设，一些有价值的数据和信息没有用上。
 
-* **忽略了未来动态：**根据过去的数据预测了学校未来的变化，但是忽视了每年投资后会对学校产生的影响。
+* **忽略了未来动态：**
+根据过去的数据预测了学校未来的变化，但是忽视了每年投资后会对学校产生的影响。
 
 ### News Release(Gao)
 
