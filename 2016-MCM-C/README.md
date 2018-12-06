@@ -190,15 +190,51 @@ The ProblemCDATA.zip data file contains:
 7. Give the final result: the list of schools we chose.
 8. Wish our model can help you at the key point of choosing the targets of donation.
 
-
-
 ---
 
 ## The Optimal Investment Strategy Based on the Large--scale Non-linear Constraint Optimization Methods (Team #47823)
 
 ### Summary(Gao)
 
+* **Charitable identity**
+Then we set out to decide our focus, which is to invest more on those schools with more minority races, lower educational performance, higher debt ratio and so on.
+
+* **Data extraction: PCA**
+
+* **Modeling**
+    * **Key assumption**
+        Social utility has logarithmic relationship with the earnings of graduated students and graduation rate.
+    * **Hyperparameter K**
+        Denote the marginal rate of substitution between the earnings of graduated students and graduation rate.
+        两种商品之间的替代程度可以由商品的边际替代率来衡量。一种商品对另外一种商品的边际替代率定义为：在效用满足程度保持不变的条件下，消费者增加一单位一种商品的消费可以代替的另一种商品的消费数量，简称为边际替代率。
+    * **ROI**
+        Define the ROI function of each target school as the incremental utility.
+
+* **Devise strategy**
+    * **Improved PSO Algorithm Based on the Augmented Lagrange 基于增广拉格朗日的粒子群优化算法**
+        A typical method to solve the multivariable optimization problem.
+* **Make sensitivity analysis**
+    * Parameter K
+
 ### Problem Statement(Gao)
+We must set big goals and spare no effort on the way because the world won't get better by itself.
+
+### Planned Approach(Gao)
+
+* **Targets**
+ * Target school
+ * The investment amount per school.
+ * The investment duration
+* **Procedures**
+ * Part One: Data Analysis and Focus Decision
+      * Decide not to duplicating the investment and focus of other large grand organizations.
+ * Part Two: School Selecting  
+      * Manual selection
+      * PCA
+ * Part Three: Strategy Making
+      * ROI
+      * Optimization algorithm
+
 
 ### Assumptions(Liu)
 
@@ -215,6 +251,17 @@ The ProblemCDATA.zip data file contains:
 ### Conclusion(Hu)
 
 ### Letters to the CFO(Gao)
+
+1. First is the opening remarks.
+2. Point out what we want to do first is to decide the focus of the foundation.
+3. The most creative work is that we determine a reasonableROI function based on the social utility.
+    * More students the school has, the higher contributions school make.
+    * The higher the earnings the graduated students are, the higher the utility is.
+    * A higher utility school has high graduation rate.
+4. Another point is that the utility function is concave(凹函数).
+5. Another accomplishment is that we utilize a complex algorithm to maximize the total ROI of the target schools.
+6. None of our target school is well-known, which is consistent with our focus.
+7. We cling to the belief that our model is a powerful tool to help you devise the best investment strategy.
 
 ---
 
