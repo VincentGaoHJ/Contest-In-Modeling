@@ -133,23 +133,42 @@ The ProblemCDATA.zip data file contains:
 ### Data Processing
 
 #### Data Screening(Liu)
+1.删掉经济状况不好以及缺乏学生信息的学校，删掉有一半以上特征为NULL的学校。总共选取了7805个学校。
+2.将一些具有二重性的特征结合成为一个特征。将一些有缺失值的特征进行补值。保留了一些比较特殊的学校，像什么什么女子大学，为了后面聚类和补值的需要。
+我们删掉地址、学生年龄等对ROI计算无用的信息。
+
 
 #### Data imputation(Liu)
-
+1.用K-means聚类方法来进行聚类,K值是用R^2 statistic来确定的。
+2.一些变量是对ROI有影响但是缺失值，有一些是完整的，可以通过完整的值来指导填值。通过这些变量可以很好来分辨学校的相同和不同。
+3.只对完整的数据进行K-means聚类，认为这些完整的数据的聚类同样适用于那些不完整的数据。最合适的K值为5.我们认为在同一class的学校具有最大的相似性。
 #### Data Normaliztion(Liu)
-
+用最大最小值来进行数据的归一化：x'=(x-xmin)/(xmax-xmin)
 ### ROI Evaluation
-
-#### Concept of ROI(Liu)
-
+ROI是用来衡量金融投资的一个指标 ：ROI=(Output/Input)*Urgency
+输出主要是用来衡量教育的一个指标，Output={V1*[SAG RR RA EER]T
+                                      V2*[SAG RR RA]T  }
+衡量输出用到的数据有四个SAG（毕业后的薪资） RR（保留率） RA（偿还能力） EER（教育提高率）；V1 V2是权重。
+INPUT=（1-a）+a NP                                            
+a是修正指数，因为NP是输入中仅有的一个指标，所以他影响很大要加修正指数a
+因为我们是给一个慈善组织做进行相关的评定，所以要给ROI修正，Urgency是一个修正指数，用来修正ROI。
+Urgency=V3 [PG FL DEBT]T
+V1 V2是通过层次分析法获得的，V3是通过主成分分析法获得的。
 #### Using Grey Theory to Predict ROI(Liu)
-
+灰度预测主要是用到了GM(1,1)模型，它是基于随机的原始时间序列，经按时间累加后所形成的新的时间序列呈现的规律可用一阶线性微分方程的解来逼近。经证明，经一阶线性微分方程的解逼近所揭示的原始时间序列呈指数变化规律。因此，当原始时间序列隐含着指数变化规律时，灰色模型GM(1,1)的预测结果会很好。
+这个模型是用来预测未来五年的数据的。
 ### Model Construction
+在基础模型，忽视掉时间因素，并且假设资金是在很短时间内发完。用一个连续变量来代表学校收到的资金支持，用一个二元的变量来代表学校是否收到资助。
+在复杂模型中要考虑到时间。
+最终会给出在两个模型下的结果。
 
 #### Definition of Risk(Liu)
-
+risk是一个特征的标准差比上平均值
 #### Basic Model(Liu)
-
+1.为了获得最大的回报，要找到最大的ROI
+2.投资有范围限制
+3.资助的学校数量也有范围
+4.学校的规模太小就不予考虑
 #### Results of Basic Model(Hu)
 
 * **假设**
@@ -168,6 +187,7 @@ The ProblemCDATA.zip data file contains:
     * 图3 饼图 投资分配策略（基础模型仿真结果）
 
 #### Time Series Model(Liu)
+因为投资是要考虑到对五年的投资，所以还要在变量中加入t这一影响。t代表年，以年为单位。
 
 #### Results of Time Series Model(Hu)
 
@@ -320,13 +340,38 @@ We must set big goals and spare no effort on the way because the world won't get
 
 
 ### Assumptions(Liu)
-
+1.五年内学校的数量是一个常数
+2.学校会将所有的资金用于提高学生
+3.效用函数必须是凹的
+4.不考虑通货膨胀和通货紧缩
 ### Data Analysis and Focus Decision(Liu)
-
+Data Analysis:
+数据总共有两种：离散的和连续的
+连续的数据可以分为两个组，一个组是用来决定学校选择的，另一个组是来衡量学校的效用函数以及ROI。
+最后将所有的数据分为了三个部分：连续数据来选择学校、离散数据来选择学校、连续数据计算ROI
+Focus Decision:
+首先，认为这个慈善组织是为了让世界更公平。
+其次为了不和其他慈善组织有一样的投资，我们勉强只考虑资金支持。
+不投资纽约、加州、哥伦比亚地区、马萨诸塞州。
+总结来说，目标如下
+1.成绩低的
+2.获得助学金比例低的地区
+3.大比例少数民族的
+4.每周项目受奖多的
+5.时间比例？
+6.贷款比例高的
 ### School Selecting(Liu)
-
+1.人为删除（那四个州）
+2.主成分分析法选择学校
+   先将残缺的数据通过均值进行填补，然后对数据进行标准化处理。
+   用处理完的数据进行协方差计算，获得协方差的特征值和特征向量。
+   然后可以计算获得贡献率。
+   贡献率的和越大，T越大，score越大。
+   最后可以用score来rank school
 ### Strategy Making(Liu)
-
+为了决定选择哪个学校进行投资，要使用ROI，在使用ROI先构建了一个效用函数U
+U=log（x），x是输入（four main factors , student number , graduated ratio , earnings of graduated students and investment）
+前提：U是一个凸函数，U是一个状态值。
 ### Result(Hu)
 
 * **fitness figure 算法经过50次迭代后收敛，说明了算法的有效性**
@@ -408,11 +453,18 @@ K值没有数据供参考，会影响ROI的输出。
 ### Introduction(Gao)
 
 ### Addressing the Missing Values(Liu)
+1.对于缺失大于50%的数据，省略
+2.对于缺失（10%-50%）的数据，采用从相似记录随机取值填补的策略，基于模型分析的要用分配表中的数据替换&
+3.对于缺失小于10%，采用均值填补的策略。
 
 ### Determining the Performance Index(Liu)
-
+1.选择影响goodgrant concern 的因素，为了方便计算和解释，将所有的数据归一化
+2.模型假设index是线性的，用PCF来对变量进行加权(PCA)
 ### Identifying Performance Contributing Variables via Post-LASSO(Liu)
-
+LASSO是用来描述内在变量、表现指数以及对其有影响的变量的一个线性模型
+给每个变量一个系数来减小均方误差。
+但是因为很多变量在不断变化，所以引入post-LASSO模型来进行变量选择
+LARS
 ### Determining Investment Strategy based on ROI(Liu)
 
 ### Extended Model(Hu)
