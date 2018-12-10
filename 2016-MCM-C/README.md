@@ -450,7 +450,47 @@ K值没有数据供参考，会影响ROI的输出。
 
 ### Summary(Gao)
 
+* **Start**
+
+In order to determine the optimal donation strategy, this paper proposes a datamotivated model based on an original definition of return on investment (ROI) appropriate for charitable organizations.
+
+* **Process**
+
+    * **Addressing missing data.**
+    * **Develop a composite index, called the performance index, to quantify students’ educational performance.**
+    * **Employ a linear model and a selection method called post-LASSO to select variables that statistically significantly affect the performance index and determine their effects (coefficients).**
+        * insusceptible
+            * tuition & fees in 2010 (insusceptible)
+            * Carnegie High-Research-Activity classification (insusceptible)
+        * homogenous and heterogenous
+            * percentage of students who receive a Pell Grant
+            * share of students who are part-time
+            * student-to-faculty ratio
+            * homogenous: is modeled as the change in fitted values of performance contributing variables over increase in donation amount, which can be predicted from the fitted curve.
+            * The heterogenous: is modeled as a tuning parameter which adjusts the homogenous influence based on deviation from the fitted curve.
+    * **Calculate ROI**
+    * **Also, we propose an extended model to handle problems caused by time duration and geographical distribution of donations.**
+
 ### Introduction(Gao)
+
+* **Statement of the Problem**
+
+    * There exists no doubt in the significance of postsecondary education to the development of society.
+    * To achieve this goal, several large foundations like Gates Foundation and Lumina Foundation have developed different evaluation approaches...
+    * In other empirical literature...
+    * Make a conclusion about our work.
+
+* **Baseline Model**
+
+    * Our definition of ROI is similar to its usual meaning.
+    * Cope with data missingness.
+    * Then we divide the impact of donation amount into 2 parts: homogenous and heterogenous one. 
+    * Calculate the ROI of the performance index.
+    * Also, we propose an extended model to handle problems caused by time duration and geographical distribution of donations.
+
+* **Assumptions(Liu)**
+
+* **The Advantages of Our Model(Hu)**
 
 ### Addressing the Missing Values(Liu)
 * 1.对于缺失大于50%的数据，省略
@@ -500,6 +540,17 @@ LASSO是用来描述内在变量、表现指数以及对其有影响的变量的
     * post-LASSO selection仅适用于简单的线性模型
 
 ### Letters to the CFO(Gao)
+
+
+1. Our team has proposed a performance index quantifying the students’ educational performance of each institution and defined the return of investment (ROI) appropriately for 
+charitable organization like Goodgrant Foundation. 
+2. The composite performance index is developed after taking all the possible performance indicators into consideration
+3. Adopt a variable selection method to find out performance contributing variables.
+4. And we calculate ROI, defined as increase in the performance index over your donation amount.
+5. In conclusion, our model successfully produced an investment strategy including a list of
+target institutions and investment amount for each institution.
+6. None of our target school is well-known, which is consistent with our focus.
+7. We cling to the belief that our model is a powerful tool to help you devise the best investment strategy.
 
 ---
 
