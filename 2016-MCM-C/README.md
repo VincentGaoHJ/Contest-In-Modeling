@@ -453,9 +453,9 @@ K值没有数据供参考，会影响ROI的输出。
 ### Introduction(Gao)
 
 ### Addressing the Missing Values(Liu)
-1.对于缺失大于50%的数据，省略
-2.对于缺失（10%-50%）的数据，采用从相似记录随机取值填补的策略，基于模型分析的要用分配表中的数据替换&
-3.对于缺失小于10%，采用均值填补的策略。
+* 1.对于缺失大于50%的数据，省略
+* 2.对于缺失（10%-50%）的数据，采用从相似记录随机取值填补的策略，基于模型分析的要用分配表中的数据替换&
+* 3.对于缺失小于10%，采用均值填补的策略。
 
 ### Determining the Performance Index(Liu)
 1.选择影响goodgrant concern 的因素，为了方便计算和解释，将所有的数据归一化
@@ -463,10 +463,18 @@ K值没有数据供参考，会影响ROI的输出。
 ### Identifying Performance Contributing Variables via Post-LASSO(Liu)
 LASSO是用来描述内在变量、表现指数以及对其有影响的变量的一个线性模型
 给每个变量一个系数来减小均方误差。
-但是因为很多变量在不断变化，所以引入post-LASSO模型来进行变量选择
-LARS
+但是因为很多变量在不断变化，所以引入post-LASSO模型来进行变量选择.。
+如论文中所示，post-LASSO加入了一个惩罚因子。
+利用LARS算法和最小二乘法，来获得最合适的惩罚因子。
+共选出了六个变量。
 ### Determining Investment Strategy based on ROI(Liu)
-
+* 选出的变量有几个对于投资金额不敏感，所以我们只考虑投资金额上升后对三个变量的影响，还有他们的系数。
+将变量和投资金额进行拟合，获得fROI。
+虽然提高投资金额产生的影响是同质的，但是大学使用投资金额的方式是不一样的。同质的影响只受投资金额以及金额的增加影响，而不同质的影响因校而异。
+为了衡量不同质的影响，引入了参数P，
+* ROI=fROI P
+* 1.现在对不同的学校都有一个ROI值，通过每个学校的ROI值来确定投资金额。
+* 2.然后通过ROI值来判断哪些学校的潜力大，然后从大选到资金用完。
 ### Extended Model(Hu)
 
 * **时间**
@@ -502,8 +510,12 @@ LARS
 ### Introduction(Gao)
 
 ### Data Cleaning and Imputation Schema(Liu)
-
+* 1.用PYTHON重新组织了数据，删掉了一些具有不合理数据的学校
+* 2.然后用R的程序分析了数据的结构
+* 3.缺失的数据主要为两种：MCAR MAR用两种办法处理
 ### Model Components(Liu)
+总共有两种方式来衡量学校的贡献，一种为衡量毕业生的技能对社会需求的满足，另外一种为毕业生平均工资
+先是给出了一个GOODNESS的计算方式，然后每一个学校有一个prior
 
 ### Solving the Optimization Problem(Hu)
 
@@ -516,7 +528,9 @@ LARS
     迭代算法，计算每个学校Goodness/Resource斜率，每次迭代，对增幅最大的学校进行投资，直至资金耗尽。
 
 ### Problem Statement and Special Considerations(Liu)
-
+* 这篇文章的主要目的是使这一百万达到最大的效果
+* 我们的模型是告诉这个慈善组织，怎样评估投资的影响，给哪些学校投资，每个学校给多少，每个学校期望值是多少
+* 除了分数数据，还考虑了其他特征。公立学校、私立学校以及社区大学。
 ### Model Analysis(Hu)
 
 * **为什么用贝叶斯**
