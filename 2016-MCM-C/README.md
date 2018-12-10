@@ -489,7 +489,12 @@ In order to determine the optimal donation strategy, this paper proposes a datam
     * Also, we propose an extended model to handle problems caused by time duration and geographical distribution of donations.
 
 * **Assumptions(Liu)**
-
+* 稳定。关键因素例如投资金额以及表现系数是不变的。
+* 投资是离散的不是连续的。
+* 表现系数是线性的。
+* 表现贡献变量对表现系数的影响是线性的。
+* 提高投资金额会通过影响表现变量来影响表现系数
+* 投资的影响包括两个部分：一个是同质的影响，一个是不同质的影响。
 * **The Advantages of Our Model(Hu)**
     * 基于数据，无主观决策
     * 关注了潜在的原理，而不仅仅是投资额和绩效指数间的关系
