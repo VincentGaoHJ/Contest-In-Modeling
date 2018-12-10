@@ -469,7 +469,27 @@ LARS
 
 ### Extended Model(Hu)
 
+* **时间**
+    * 场景1：
+    每年根据上一年投资结果带入模型得出新一年的投资策略。
+    * 场景2：
+    将未资助的学校视为固定，对前一年资助的学校的相关变量进行改变后带入模型得出新的投资策略。
+    
+* **地理分布**
+    
+    保证公平性。方案一：分割地理区域，在一个区域内运用模型分配资金。方案二：当当单个地区投资的机构数量超过了预设，对该地区的ROI打折扣。
+
 ### Conclusions and Discussion(Hu)
+
+* **优势**
+    * 通过PCA制定了performance指数
+    * 确定了三个主要performance contributing变量
+    * 通过GAM拟合推导出了performance contributing变量和捐赠量的关系，来预测出了ROI
+    * 选择院校和确定投资额由两步算法完成
+    
+* **劣势**
+    * 没有时间序列数据
+    * post-LASSO selection仅适用于简单的线性模型
 
 ### Letters to the CFO(Gao)
 
