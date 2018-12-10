@@ -558,7 +558,23 @@ target institutions and investment amount for each institution.
 
 ### Summary(Gao)
 
+* **Bayesian multi-stage model to maximize Return on Investment over five years**
+
+* Model One: Be made to relate the distribution of students' majors at school to the expected number of jobs that school will add to the economy.
+
+* Model Two: Be fit to gibe the relationship between jobs added to the economy and changed in real GDP.
+
+* Model Three: Goodness rate is related to added GDP and median salary.
+
+* Model Four: A linear regression model relating Goodness to a combination of the school's tuition and enrollment.
+
+* Model Five: ROI
+
 ### Introduction(Gao)
+
+* **Introduce** Solid investments will have a positive effect on overall student performance.
+* **Background**  There are important returns to expanding higher education, especially in developed countries such as the United States.
+* **Overview** Return on Investment was calculated as a function of the school’s ”goodness” and the school’s resources.
 
 ### Data Cleaning and Imputation Schema(Liu)
 * 1.用PYTHON重新组织了数据，删掉了一些具有不合理数据的学校
@@ -616,3 +632,21 @@ target institutions and investment amount for each institution.
 在不受限制时，表中既有知名学校，也有不知名的学校，证明了模型的合理性，但是出现了一所学校的投资额过多的情况，所以改进了模型，添加了限制额。限制额为每所学校5000万美元，结果是增加了投资学校的数量，使得平均投资额降低。有限制的改进模型更好的保护了可能存在的潜在ROI，并且避免了对某所学校可能出现的不预见的情况。
 
 ### Letters to the CFO(Gao)
+
+* **An outlook of our work**
+This measurement was a function of what we called Goodness obtained by and
+resources available to a given school. 
+    * **Goodness** was assessed as a school’s contribution to the U.S. Gross Domestic Product (GDP). 
+    * **Resources** were defined as a school’s annual income from tuition and external funds. This RoI was optimized by the model’s simulations.
+    
+* **Detail** 
+    * A positive relationship was then found between the amount of jobs added and the change in GDP.
+    * Computed an overall model by looking at the relationship between resources and goodness for all the schools on which we had data.
+    * Using this first model as a starting point, we developed individual models for each school.
+    * Estimated RoI over time.
+    
+* **Conclusion**
+    * After optimizing RoI, 73 schools were given at least some sort of investment.
+    
+* **End**
+    * The recommended investments output from the model optimize an acceptable metric for gauging the added value to the invested schools. Multiple models were compared to one another to arrive at a concluded model for the recommended investments. We are confident that this model will realize its full potential.
