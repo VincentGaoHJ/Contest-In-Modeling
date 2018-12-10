@@ -491,7 +491,11 @@ In order to determine the optimal donation strategy, this paper proposes a datam
 * **Assumptions(Liu)**
 
 * **The Advantages of Our Model(Hu)**
-
+    * 基于数据，无主观决策
+    * 关注了潜在的原理，而不仅仅是投资额和绩效指数间的关系
+    * 同时考虑了同质性和异质性
+    * 充分利用了截面数据，不需要时间序列数据来产生合理的结果
+    
 ### Addressing the Missing Values(Liu)
 * 1.对于缺失大于50%的数据，省略
 * 2.对于缺失（10%-50%）的数据，采用从相似记录随机取值填补的策略，基于模型分析的要用分配表中的数据替换&
