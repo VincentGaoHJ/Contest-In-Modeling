@@ -47,6 +47,14 @@
 
 **除了开发和实施您的模型来解决这个问题，您的团队还应该验证您的模型，评估优势和弱点，并提出改进建议（未来工作）。**
 
+References:
+[1] http://www.wsj.com/articles/why-tsa-security-lines-arent-as-bad-as-youd-feared1469032116
+[2] http://www.chicagotribune.com/news/ct-tsa-airport-security-lines-met-20160823-
+story.html
+[3] http://www.cnn.com/2016/06/09/travel/tsa-security-line-wait-times-how-long/
+[4] http://wgntv.com/2016/07/13/extremely-long-lines-reported-at-chicago-midwayairports-tsa-checkpoint/
+[5] http://www.cnbc.com/2016/04/14/long-lines-and-missed-flights-fuel-criticism-of-tsascreening.html
+
 
 
 ---
