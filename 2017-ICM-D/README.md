@@ -48,6 +48,7 @@
 **除了开发和实施您的模型来解决这个问题，您的团队还应该验证您的模型，评估优势和弱点，并提出改进建议（未来工作）。**
 
 References:
+
 [1] http://www.wsj.com/articles/why-tsa-security-lines-arent-as-bad-as-youd-feared1469032116
 
 [2] http://www.chicagotribune.com/news/ct-tsa-airport-security-lines-met-20160823-story.html
