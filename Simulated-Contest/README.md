@@ -26,7 +26,7 @@
 
 ---
 
-## Model ONE
+## Model One
 
 ---
 
@@ -34,11 +34,11 @@
 
 ---
 
-## Test our model
+## Test Our Model
 
 ---
 
-## Sensitive analysis and validation
+## Sensitive Analysis and Validation
 
 ---
 
