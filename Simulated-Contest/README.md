@@ -1,11 +1,5 @@
 # Simulated Contest： Through Games, Discover the world
 
-
-
----
-
-## Contents
-
 ---
 
 ## Title
