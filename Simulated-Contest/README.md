@@ -21,6 +21,7 @@
 ## Assumptions
 
 * 我们认为，在奇妙海岛这类问题中类似于level 1中的PANDA这种没有任何约束的动物种类最多不超过一种。
+* 奇妙海岛的难度level划分与我们模型求出的难度系数呈线性关系。
 
 ## Planned Approach
 
