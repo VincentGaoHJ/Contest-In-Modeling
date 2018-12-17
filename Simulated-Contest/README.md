@@ -53,6 +53,7 @@
 ## Strengths and Weaknesses
 
 ### Strengths
+* 我们的难度判断模型可以在不将问题求解出来的情况下判断题目的难度。
 
 ### Weaknesses
 
